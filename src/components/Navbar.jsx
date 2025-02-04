@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
 
 const Navbar = () => {
     return (
@@ -15,48 +16,48 @@ const Navbar = () => {
                     <span className="website-name">Shahrukh Khan</span>
                 </a>
 
-                {/* Navigation Links */}
+                {/* Navigation Links (Use Link for React Router) */}
                 <ul className="nav-links">
                     <li>
-                        <a href="#home">
+                        <Link to="/">
                             <i className="fas fa-home"></i> Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#about">
+                        <Link to="/about">
                             <i className="fas fa-user"></i> About
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#skills">
+                        <Link to="/skills">
                             <i className="fas fa-chart-bar"></i> Skills
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#projects">
+                        <Link to="/project">
                             <i className="fas fa-project-diagram"></i> Projects
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#experience">
+                        <Link to="/experience">
                             <i className="fas fa-briefcase"></i> Experience
-                        </a>
+                        </Link>
                     </li>
+                    {/* Dropdown Menu */}
                     <li className="dropdown">
                         <a href="#">
                             <i className="fas fa-bars"></i> More
                         </a>
                         <ul className="dropdown-content">
                             <li>
-                                <a href="#certifications">
-                                    <i className="fas fa-certificate"></i>{" "}
-                                    Certifications
-                                </a>
+                                <Link to="/certifications">
+                                    <i className="fas fa-certificate"></i> Certifications
+                                </Link>
                             </li>
                             <li>
-                                <a href="#blog">
+                                <Link to="/blog">
                                     <i className="fas fa-blog"></i> Blog
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a

@@ -28,6 +28,7 @@ body {
     justify-content: space-between; /* Align items to opposite ends */
     align-items: center;
     padding: 1rem 0;
+    z-index: 1000;
 }
 
 /* .navbar .logo {

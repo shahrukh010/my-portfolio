@@ -132,7 +132,7 @@ const SkillSection = () => {
 
                 {/* View More Button */}
                 <div className="view-more">
-                    <button className="btn" onClick={() => navigate("/ViewSkills")}>Go to Portfolio
+                    <button className="btn" onClick={() => navigate("/ViewSkills")}>
                         View All My Skills
                     </button>
                 </div>

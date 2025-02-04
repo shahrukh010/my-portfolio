@@ -2,9 +2,10 @@ import React, { useEffect } from "react";
 import "./Portfolio.css";
 
 const Portfolio = () => {
-  useEffect(()=>{
-    window.scroll(0,0);
-  },[]);
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <div className="portfolio">
       {/* Header */}
@@ -30,11 +31,21 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="contact">
-        <h2>📬 Contact Me</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
-        <p>GitHub: <a href="#">github.com/yourusername</a></p>
+      <section className="contact-section">
+        <div className="contact-card">
+          <h2>📩 Contact Me</h2>
+          <p className="contact-intro">
+            I'm open to collaborations, new opportunities, or just a chat. Feel free to reach out!
+          </p>
+
+          {/* Contact Form */}
+          <form className="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </section>
     </div>
   );
