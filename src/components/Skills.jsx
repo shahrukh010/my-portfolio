@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SkillSection = () => {
+    const navigate = useNavigate();
+
     return (
         <section id="skill" className="skill-section">
             <div className="container">
@@ -129,9 +132,9 @@ const SkillSection = () => {
 
                 {/* View More Button */}
                 <div className="view-more">
-                    <a href="#all-skills" className="btn">
+                    <button className="btn" onClick={() => navigate("/ViewSkills")}>Go to Portfolio
                         View All My Skills
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>
