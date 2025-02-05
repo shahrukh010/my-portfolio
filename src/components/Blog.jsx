@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 const blogs = [
   {
@@ -45,6 +46,7 @@ const BlogSection = () => {
           </div>
         </div>
       ))}
+      <Footer></Footer>
     </div>
   );
 };

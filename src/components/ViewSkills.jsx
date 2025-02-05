@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Footer from "./Footer";
 import "./Portfolio.css";
 
 const Portfolio = () => {
@@ -47,6 +48,8 @@ const Portfolio = () => {
           </form>
         </div>
       </section>
+      <Footer />
+
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 const ProjectsSection = () => {
     const projects = [
@@ -29,27 +30,30 @@ const ProjectsSection = () => {
     ];
 
     return (
-        <section id="projects" className="projects-section">
-            <div className="container">
-                <h2>My Projects</h2>
-                <div className="projects-grid">
-                    {projects.map((project) => (
-                        <a
-                            key={project.id}
-                            href={project.link}
-                            className="project-card"
-                        >
-                            <img
-                                src={project.logo}
-                                alt={`${project.name} Logo`}
-                                className="project-logo"
-                            />
-                            <h3>{project.name}</h3>
-                        </a>
-                    ))}
+        <div className="">
+            <section id="projects" className="projects-section">
+                <div className="container">
+                    <h2>My Projects</h2>
+                    <div className="projects-grid">
+                        {projects.map((project) => (
+                            <a
+                                key={project.id}
+                                href={project.link}
+                                className="project-card"
+                            >
+                                <img
+                                    src={project.logo}
+                                    alt={`${project.name} Logo`}
+                                    className="project-logo"
+                                />
+                                <h3>{project.name}</h3>
+                            </a>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <Footer></Footer>
+        </div>
     );
 };
 

@@ -14,7 +14,7 @@ const HomeSection = () => {
       </section>
 
       {/* Footer Component */}
-      <About></About>
+      {/* <About></About> */}
       <Footer />
     </>
   );
