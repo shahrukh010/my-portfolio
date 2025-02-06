@@ -29,3 +29,4 @@ Welcome to my **Personal Portfolio Website**! This project showcases my skills, 
 ---
 
 ## 📂 **Project Structure**
+/my-portfolio │── /src │ │── /components │ │ │── Navbar.jsx │ │ │── Home.jsx │ │ │── About.jsx │ │ │── Skills.jsx │ │ │── Projects.jsx │ │ │── Contact.jsx │ │ │── Footer.jsx │ │── /assets (images, icons) │ │── App.js │ │── index.js │── /public │── package.json │── README.md
