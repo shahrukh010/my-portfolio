@@ -221,81 +221,118 @@ body {
 .navbar .dropdown-content a:hover {
     background: #00bcd4;
 }
-
-/* Experience Section */
-.experience-section {
-    padding: 4rem 0;
-    background: #1e1e1e; /* Dark background */
-    color: #fff;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.experience-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 188, 212, 0.1); /* Subtle overlay */
-    z-index: 0;
-}
-.experience-section h2 {
-    color: #ff9800; /* Orange accent */
-    border-bottom-color: #ff9800; /* Matching underline */
-}
-
-.experience-card {
-    background: #2b2b2b;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
-}
-
-.experience-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #fff;
-}
-
-.experience-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #d4d4d4;
-    margin-bottom: 0.5rem;
-}
-
-.experience-card strong {
-    color: #00bcd4;
-}
-
-/* Slider Styling */
-.slick-slider {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.slick-dots {
-    bottom: -30px;
-}
-
-.slick-dots li button:before {
-    font-size: 10px;
-    color: #333;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #00bcd4;
-}
+ /* Experience Section */
+    .experience-section {
+      padding: 4rem 0;
+      background: #1e1e1e; /* Dark background */
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .experience-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 188, 212, 0.1); /* Subtle overlay */
+      z-index: 0;
+    }
+    .experience-section h2 {
+      color: #ff9800; /* Orange accent */
+      border-bottom: 2px solid #ff9800; /* Matching underline */
+      position: relative;
+      z-index: 1;
+    }
+    .experience-card {
+      background: #2b2b2b;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      z-index: 1;
+      margin: 1rem;
+    }
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+    .experience-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    .experience-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d4d4d4;
+      margin-bottom: 0.5rem;
+    }
+    .experience-card strong {
+      color: #00bcd4;
+    }
+    /* Dropdown Menu Styling */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-top: 0.2rem;
+    }
+    .dropdown-button {
+      background-color: #ff9800;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .dropdown-button:hover {
+      background-color: #e68a00;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #2b2b2b;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      z-index: 2;
+    }
+    .dropdown-content a {
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+    .dropdown-content a:hover {
+      background-color: #00bcd4;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    /* Slider Styling */
+    .slick-slider {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    .slick-dots {
+      bottom: -30px;
+    }
+    .slick-dots li button:before {
+      font-size: 10px;
+      color: #333;
+    }
+    .slick-dots li.slick-active button:before {
+      color: #00bcd4;
+    }
 
 /* Skills Section */
 .skill-section {
@@ -470,14 +507,6 @@ body {
     background: #008ba3;
 }
 
-/* Experience Section */
-.experience-section {
-    padding: 4rem 0;
-    background: #252525; /* Slightly lighter gray */
-    color: #fff;
-    text-align: center;
-    border-top: 2px solid #00bcd4; /* Accent border for separation */
-}
 
 
 .projects-section {
