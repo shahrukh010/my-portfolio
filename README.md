@@ -24,4 +24,4 @@ Welcome to my **Personal Portfolio Website**! This project showcases my skills, 
 - **Frontend:** React.js, JavaScript, HTML5, CSS3  
 - **Styling:** CSS Flexbox, Grid, Tailwind (optional), Animations  
 - **Icons:** Font Awesome  
-- **Hosting:** GitHub Pages / Vercel / Netlify  
+
