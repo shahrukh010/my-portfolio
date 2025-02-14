@@ -13,9 +13,9 @@ const Navbar = () => {
                     rel="noopener noreferrer"
                 >
                     <i className="fab fa-github"></i>
-                    <span className="website-name">Shahrukh Khan</span>
                 </a>
 
+                    <span className="website-name">Shahrukh Khan</span>
                 {/* Navigation Links (Use Link for React Router) */}
                 <ul className="nav-links">
                     <li>
@@ -23,11 +23,11 @@ const Navbar = () => {
                             <i className="fas fa-home"></i> Home
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/about">
                             <i className="fas fa-user"></i> About
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/skills">
                             <i className="fas fa-chart-bar"></i> Skills
@@ -41,6 +41,11 @@ const Navbar = () => {
                     <li>
                         <Link to="/experience">
                             <i className="fas fa-briefcase"></i> Experience
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/blog">
+                        <i className="fas fa-blog"></i> Blog
                         </Link>
                     </li>
                     {/* Dropdown Menu */}

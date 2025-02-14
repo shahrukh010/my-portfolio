@@ -21,13 +21,14 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/project" element={<Project />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/viewskills" element={<ViewSkills />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+         <Route path="/" element={<Home />} />  {/* Home route */}
+        <Route path="/about" element={<About />} />   {/* About page route */}
         {/* <Route path="/certifications" element={<Certifications />} /> */}
       </Routes>
     </Router>

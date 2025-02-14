@@ -1,6 +1,6 @@
-import React from "react";
-import Footer from "./Footer"; // Make sure the path is correct
-import About from "./About"; // Make sure the path is correct
+import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link for navigation
+import Footer from './Footer';            // Assuming Footer component
 
 const HomeSection = () => {
   return (
@@ -9,12 +9,12 @@ const HomeSection = () => {
         <div className="home-content">
           <h1>Welcome to My Portfolio</h1>
           <p>I'm a passionate developer who loves creating amazing web experiences.</p>
-          <a href="#about" className="btn">Learn More</a>
+          {/* Using React Router Link to navigate to the About page */}
+          <Link to="/about" className="btn">Learn More</Link>
         </div>
       </section>
 
       {/* Footer Component */}
-      {/* <About></About> */}
       <Footer />
     </>
   );

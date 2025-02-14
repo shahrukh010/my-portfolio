@@ -49,6 +49,18 @@ body {
     opacity: 0; /* Start with fully transparent */
     animation: fadeIn 2s ease forwards; /* Apply fade-in animation */
 }
+ .navbar .website-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: transparent; /* Start with transparent text */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0; /* Start with fully transparent */
+    animation: fadeIn 3s ease forwards; /* Apply fade-in animation */
+}
 
 /* Keyframes for Fade-In Effect */
 @keyframes fadeIn {
@@ -537,6 +549,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.project-card a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Ensure text color is inherited */
 }
 
 .project-card:hover {
