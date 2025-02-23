@@ -9,8 +9,6 @@ import Experience from "./components/Experience";
 import ViewSkills from "./components/ViewSkills";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-// import Certifications from "./components/Certifications";
 import ScrollToTop from "./components/ScrollToTop"; // Correct import path
 
 export default function App() {

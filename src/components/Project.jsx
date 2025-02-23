@@ -1,61 +1,60 @@
 import React from "react";
 import Footer from "./Footer";
 import { FaGithub } from "react-icons/fa";
-import Logo from '../assets/Logo.png';
-import blog from "../assets/blog.png"
-import image from "../assets/image.png";
+
+const projects = [
+    {
+        id: 1,
+        name: "Blog REST API Project",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3pChdXqdWy5AeCUpf_zbsH3x4VdtLA0RIA&s",
+        link: "https://github.com/shahrukh010/blog-restapi.git",
+        github: true
+    },
+    {
+        id: 2,
+        name: "E-Commerce App",
+        logo: "https://img.freepik.com/premium-vector/shopping-logo-design-template_446318-130.jpg?w=1380",
+        link: "https://github.com/shahrukh010/shopme_01.git",
+        github: true
+    },
+    {
+        id: 3,
+        name: "Engage Points",
+        logo: "https://img.icons8.com/color/96/000000/money-bag.png",
+        link: "https://www.engagepoints.com",
+        github: false
+    },
+    {
+        id: 4,
+        name: "Merchgarage",
+        logo: "https://www.merchgarage.com/assets/images/logo.svg",
+        link: "https://www.merchgarage.com/",
+        github: false
+    },
+    {
+        id: 5,
+        name: "Cleverstory",
+        logo: "https://www.paperflite.com/sites/default/files/inline-images/paperflite.png",
+        link: "https://www.paperflite.com/cleverstory",
+        github: false
+    }
+];
 
 const ProjectsSection = () => {
-    const projects = [
-        {
-            id: 1,
-            name: "Blog REST API project",
-            logo: blog,
-            link: "https://github.com/shahrukh010/blog-restapi.git"
-        },
-        {
-            id: 2,
-            name: "E-Commerce App",
-            logo: Logo,
-            link: "https://github.com/shahrukh010/shopme_01.git"
-        },
-        {
-            id: 3,
-            name: "Engage Points",
-            logo: image,
-            link: "https://www.engagepoints.com"
-        },
-        {
-            id: 4,
-            name: "Merchgarage",
-            logo: "https://www.merchgarage.com/assets/images/logo.svg",
-            link: "https://www.merchgarage.com/"
-        },
-        {
-            id: 5,
-            name: "Cleverstory",
-            logo: "https://www.paperflite.com/sites/default/files/inline-images/paperflite.png",
-            link: "https://www.paperflite.com/cleverstory"
-        }
-    ];
-
     return (
         <div>
             <section id="projects" className="projects-section">
                 <div className="container">
-                    <h2>My Projects</h2>
+                    <h2 className="section-title">🚀 My Projects</h2>
                     <div className="projects-grid">
                         {projects.map((project) => (
                             <div key={project.id} className="project-card">
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        src={project.logo}
-                                        alt={`${project.name} Logo`}
-                                        className="project-logo"
-                                    />
-                                    {/* Conditionally render the GitHub icon */}
-                                    {project.name !== 'Engage Points' && project.name !== 'Merchgarage' && project.name !== 'Cleverstory'&& <FaGithub />} 
-                                    <h3>{project.name}</h3>
+                                    <div className="project-img-container">
+                                        <img src={project.logo} alt={project.name} className="project-logo" />
+                                    </div>
+                                    <h3 className="project-name">{project.name}</h3>
+                                    {project.github && <FaGithub className="github-icon" />}
                                 </a>
                             </div>
                         ))}
