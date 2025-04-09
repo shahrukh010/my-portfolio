@@ -9,15 +9,7 @@ const About = () => {
         <div className="container">
           <h2>About Me</h2>
           <p>
-            Hello.! I'm a full-stack developer with experience in building
-            responsive and user-friendly web applications. I enjoy solving complex
-            problems and turning ideas into reality.
-            Hello.! I'm a full-stack developer with experience in building
-            responsive and user-friendly web applications. I enjoy solving complex
-            problems and turning ideas into reality.
-            Hello.! I'm a full-stack developer with experience in building
-            responsive and user-friendly web applications. I enjoy solving complex
-            problems and turning ideas into reality.
+            Hello.! I'm Shahrukh Khan, a 24-year-old software developer. Programming is my passion. I enjoy learning new things about technology because it challenges me to think creatively and analytically. Being a software developer allows me to bring my ideas to life. I've built a few apps and worked on various projects, learning valuable lessons from each experience
           </p>
         </div>
       </section>

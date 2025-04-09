@@ -11,25 +11,6 @@ const SkillSection = () => {
                 <div className="container">
                     <h2>My Skills</h2>
                     <div className="timeline">
-                        {/* Python */}
-                        <div className="timeline-item">
-                            <div
-                                className="timeline-icon"
-                                style={{ background: "#3776ab" }}
-                            >
-                                <i className="fab fa-python"></i>
-                            </div>
-                            <div className="timeline-content">
-                                <h3>Python</h3>
-                                <p>
-                                    <strong>Proficiency:</strong> Advanced
-                                </p>
-                                <p>
-                                    Used Python for data analysis, scripting, and
-                                    building REST APIs.
-                                </p>
-                            </div>
-                        </div>
 
                         {/* Java */}
                         <div className="timeline-item">
@@ -51,6 +32,24 @@ const SkillSection = () => {
                             </div>
                         </div>
 
+                        {/* Python */}
+                        <div className="timeline-item">
+                            <div
+                                className="timeline-icon"
+                                style={{ background: "#3776ab" }}
+                            >
+                                <i className="fab fa-python"></i>
+                            </div>
+                            <div className="timeline-content">
+                                <h3>Python</h3>
+                                <p>
+                                    <strong>Proficiency:</strong> Intermediate
+                                </p>
+                                <p>
+                                    Experience with data preprocessing, and visualization using Python libraries like NumPy, Pandas, Matplotlib."
+                                </p>
+                            </div>
+                        </div>
                         {/* JavaScript */}
                         <div className="timeline-item">
                             <div
@@ -62,7 +61,7 @@ const SkillSection = () => {
                             <div className="timeline-content">
                                 <h3>JavaScript</h3>
                                 <p>
-                                    <strong>Proficiency:</strong> Intermediate
+                                    <strong>Proficiency:</strong> Basic
                                 </p>
                                 <p>
                                     Built interactive web applications using

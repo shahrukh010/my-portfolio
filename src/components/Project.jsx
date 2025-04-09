@@ -37,6 +37,13 @@ const projects = [
         logo: "https://www.paperflite.com/sites/default/files/inline-images/paperflite.png",
         link: "https://www.paperflite.com/cleverstory",
         github: false
+    },
+    {
+        id:6,
+        name:"Social Nation Now",
+        logo:"https://media.licdn.com/dms/image/v2/C4E0BAQFh3inqhmvjwA/company-logo_200_200/company-logo_200_200/0/1630630259001?e=1749686400&v=beta&t=X21a0iMjpB05JSYJHaOC3hDALIQccl9JzIf5HcQbUN4",
+        link:"https://www.socialnationnow.com/",
+        github:false
     }
 ];
 

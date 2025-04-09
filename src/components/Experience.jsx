@@ -25,12 +25,12 @@ const ExperienceSection = () => {
                     <Slider {...settings}>
                         {/* Experience Entry 1 */}
                         <div className="experience-card">
-                            <h3>Software Developer</h3>
+                            <h3>Java Developer</h3>
                             <p>
-                                <strong>Company:</strong> Tech Corp
+                                <strong>Company:</strong> One Digital Entertainment
                             </p>
                             <p>
-                                <strong>Duration:</strong> Jan 2020 - Dec 2022
+                                <strong>Duration:</strong> Sept 2023 - Persent 
                             </p>
                             <p>
                                 Developed scalable web applications using React and
@@ -41,12 +41,12 @@ const ExperienceSection = () => {
 
                         {/* Experience Entry 2 */}
                         <div className="experience-card">
-                            <h3>Frontend Developer</h3>
+                            <h3>Software Engineer</h3>
                             <p>
-                                <strong>Company:</strong> Web Solutions
+                                <strong>Company:</strong> Paperflite
                             </p>
                             <p>
-                                <strong>Duration:</strong> Jun 2018 - Dec 2019
+                                <strong>Duration:</strong> Oct 2022 - Sept 2023
                             </p>
                             <p>
                                 Built responsive user interfaces using HTML, CSS,
@@ -57,12 +57,12 @@ const ExperienceSection = () => {
 
                         {/* Experience Entry 3 */}
                         <div className="experience-card">
-                            <h3>Intern</h3>
+                            <h3>Associate Engineer</h3>
                             <p>
-                                <strong>Company:</strong> Startup Labs
+                                <strong>Company:</strong> Cognitivzen
                             </p>
                             <p>
-                                <strong>Duration:</strong> May 2017 - Aug 2017
+                                <strong>Duration:</strong> March 2022 - Oct 2022
                             </p>
                             <p>
                                 Assisted in developing internal tools and automating

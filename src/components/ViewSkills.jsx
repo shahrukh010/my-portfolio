@@ -56,16 +56,30 @@ const Portfolio = () => {
 
 // Skills Data (Array for easy customization)
 const skills = [
-  { icon: "fas fa-server", title: "Node.js & Express.js", description: "Building fast and scalable backend services." },
-  { icon: "fab fa-python", title: "Python & Django", description: "Developing robust web applications." },
-  { icon: "fas fa-database", title: "Database Management", description: "SQL, PostgreSQL & NoSQL databases." },
+  { icon: "fab fa-java", title: "Core Java", description: "Object-oriented programming and backend development using Java." },
+  { icon: "fas fa-leaf", title: "Spring Boot", description: "Building scalable backend APIs and microservices with Spring Boot." },
+  { icon: "fas fa-database", title: "Database Management", description: "SQL, Oracle12C & NoSQL databases." },
   { icon: "fas fa-code", title: "RESTful APIs", description: "Designing efficient API architectures." },
-  { icon: "fas fa-project-diagram", title: "GraphQL", description: "Optimized querying for applications." },
-  { icon: "fab fa-aws", title: "Cloud & DevOps", description: "Deploying with AWS, Docker, Kubernetes." },
+  { icon: "fab fa-aws", title: "Cloud & DevOps", description: "Worked with various AWS services for cloud deployment and management." },
   { icon: "fas fa-shield-alt", title: "Authentication & Security", description: "Secure authentication with JWT, OAuth." },
-  { icon: "fas fa-cogs", title: "Microservices", description: "Architecting distributed systems." },
   { icon: "fas fa-bug", title: "Testing & Debugging", description: "Writing unit and integration tests." },
   { icon: "fas fa-sync-alt", title: "CI/CD Pipelines", description: "Automating workflows with GitHub Actions." },
+  { icon: "fab fa-python", title: "Python", description: "Used in data science and machine learning projects." },
+  {
+  icon: "fab fa-python",
+  title: "Python Libraries",
+  description: "Proficient in NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn for building data-driven applications."
+},
+{
+  icon: "fas fa-chart-line", // 📈
+  title: "Data Science",
+  description: "Exploratory data analysis, statistical modeling, and data storytelling using Python."
+},
+{
+  icon: "fas fa-database", // 💾
+  title: "Data Analysis",
+  description: "Data wrangling, aggregation, and visualization with Pandas, NumPy, and Matplotlib."
+},
 ];
 
 export default Portfolio;
